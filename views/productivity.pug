@@ -1,0 +1,33 @@
+extends base.pug
+
+block style
+    style 
+        include ../static/style.css
+
+block content 
+    h1.proHeading Increase Your Productivity!
+    .mainPro
+        .Stop-Watch
+            .timerHeading
+                h1 Track your time. Be productive.
+            #stopwatch 00:00:00
+            ul#buttons
+                li
+                    button(onclick='startTimer()') Start
+                li
+                    button(onclick='stopTimer()') Stop
+                li
+                    button(onclick='resetTimer()') Reset
+            #timerTag
+                h2#timerTagHeading Get Ready to have a Productive Day!
+            script(src='../static/main.js')
+        .to-do-list
+            h1 To-Do List
+            input(type='text' placeholder='Task to be done...')
+            button#push Add
+            .tasks
+                //- .task
+                //-     span#taskname hello world
+                //-     button.delete
+                //-         <i class="fa-regular fa-trash-can"></i>
+            script(src='../static/to-so.js')

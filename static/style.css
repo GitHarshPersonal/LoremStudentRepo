@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation{
+    background-color: #5d3030;
+    padding: 6px;
+}
+.navigation ul{
+    display: flex;
+}
+
+.navigation ul li{
+    list-style-type: none;
+    padding: 4px 8px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.banner{
+    background: center / cover no-repeat url('static/banner.png');
+    /* opacity: 0.75; */
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner h1{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.element{
+    padding: 40px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.element h2{
+    font-size: 25px;
+}
+
+.contact-form{
+    text-align: center;
+    margin-top: 30px;
+    background-color: antiquewhite;
+    padding: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.contact-form h1{
+    font-size: 50px;
+}
+
+.myForm{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.myForm input{
+    width: 50vw;
+    padding: 8px 15px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+.myForm button{
+    padding: 8px 20px;
+    font-size: 16px;
+    border: 2px solid black;
+    border-radius: 6px;
+    color: white;
+    background-color: #5d3030;
+    cursor: pointer;
+}
+
+.aboutPara{
+    margin: 40px;
+    background-color: antiquewhite;
+    padding: 30px;
+    border-radius: 10px;
+}
+.aboutPara h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.aboutPara p{
+    margin: 25px 10px;
+}
+
+.proHeading{
+    text-align: center;
+    font-size: 60px;
+    padding: 20px;
+    margin: 10px;
+    color: #5d3030;
+}
+
+.mainPro{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Stop-Watch{
+    background-color: antiquewhite;
+    margin: 40px auto;
+    padding: 80px;
+    text-align: center;
+    border-radius: 16px;
+}
+
+#stopwatch{
+    font-size: 150px;
+    color: #5d3030;
+}
+
+#buttons{
+    display: flex; 
+    justify-content: space-around;
+    margin-right: 28px;
+}
+#buttons li{
+    list-style-type: none;
+}
+#buttons li button{
+    padding: 8px;
+    width: 135px;
+    font-size: 18px;
+    color: white;
+    background-color: #5d3030;
+    cursor: pointer;
+}
+
+.timerHeading h1{
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 8px;
+}
+
+#timerTagHeading{
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.to-do-list{
+    background-color: antiquewhite;
+    margin: 40px auto;
+    padding: 40px;
+    text-align: center;
+    border-radius: 16px;
+}
+.to-do-list h1{
+    font-size: 50px;
+}
+.to-do-list input{
+    padding: 10px;
+    width: 300px;
+}
+.to-do-list button{
+    padding: 10px;
+    width: 100px;
+}
+#push{
+    max-width: 50px;
+    color: white;
+    background-color: #5d3030;
+}
+
+.tasks{
+    padding: 10px 14px 10px 0;
+    font-size: 18px;
+    margin: 10px auto;
+    /* background-color: #ffffff; */
+    border-radius: 6px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px 0;
+    width: 100%;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.task span{
+    cursor: pointer;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+.delete{
+    max-width: 50px;
+    background-color: #5d3030;
+    color: white;
+    cursor: pointer;
+}

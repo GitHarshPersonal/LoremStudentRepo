@@ -1,0 +1,16 @@
+extends base.pug
+
+block style
+    style 
+        include ../static/style.css
+
+block content 
+    .contact-form 
+        h1 Contact Us!
+        form(action='/contact', method='post', class='myForm')
+            <input type="text"class= “name” name="name" placeholder="Enter your name..">
+            <input type="phone" class= “myInput” name="phone" placeholder="Enter your phone number..">
+            <input type="email" class= “myInput” name="email" placeholder="Enter your email..">
+            <input type="text" name="desc" placeholder="About You...">
+            button.btn
+               | Submit
