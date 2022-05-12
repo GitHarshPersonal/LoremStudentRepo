@@ -7,10 +7,12 @@ html
   body
     .navigation 
             ul 
+                img(src='../static/logo.png', style='width:45px; height:40px')
                 li #[a(href="/home") Home]
                 li #[a(href="/productivity") Productivity]
                 li #[a(href="/about") About]
                 li #[a(href="/contact") Contact Us]
                 li #[a(href="/services") Services]
     block content
-    block foot
+    footer.footer   
+      h3 Copyright@2022 | Harsh Saxena
