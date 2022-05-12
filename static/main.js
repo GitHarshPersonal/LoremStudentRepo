@@ -80,4 +80,3 @@ function resetTimer() {
     quote.textContent='Get Ready to have a Productive Day!'
     quote.style.color='black';
 }
-

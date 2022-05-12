@@ -27,6 +27,9 @@ app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
 
 //ENDPOINTS
+app.get('/', (req,res)=>{
+    res.status(200).render('home.pug');
+});
 app.get('/home', (req,res)=>{
     res.status(200).render('home.pug');
 });
@@ -35,9 +38,6 @@ app.get('/contact', (req,res)=>{
 });
 app.get('/about', (req,res)=>{
     res.status(200).render('about.pug');
-});
-app.get('/services', (req,res)=>{
-    res.status(200).render('services.pug');
 });
 app.get('/productivity', (req,res)=>{
     res.status(200).render('productivity.pug');
