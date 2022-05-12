@@ -23,7 +23,7 @@
 
 .banner{
     background: center / cover no-repeat url('static/banner.png');
-    /* opacity: 0.75; */
+    opacity: 0.9;
     height: 400px;
     display: flex;
     justify-content: center;
@@ -31,8 +31,10 @@
 }
 .banner h1{
     font-size: 60px;
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: center;
+    position: relative;
+    top: -40px;
 }
 
 .main{
@@ -42,6 +44,7 @@
 }
 .element{
     padding: 40px;
+    margin: 20px;
     border: 2px solid gray;
     border-radius: 10px;
     text-align: center;

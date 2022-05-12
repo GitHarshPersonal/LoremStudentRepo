@@ -1,7 +1,22 @@
 const express = require('express');
 const path = require('path');
 const app = express();
+const bodyparser = require('body-parser');
+const mongoose = require('mongoose');
+main().catch(err => console.log(err));
+async function main() {
+  await mongoose.connect('mongodb://localhost:27017/contactLorem');
+}
 const port = 8000;
+
+// Defiine mongoose schema
+const contactSchema = new mongoose.Schema({
+    name: String,
+    phone: String,
+    email: String,
+    desc: String
+  });
+  const contact = mongoose.model('contact', contactSchema);
 
 // EXPRESS
 app.use('/static', express.static('static'));
@@ -29,7 +44,12 @@ app.get('/productivity', (req,res)=>{
 });
 
 app.post('/contact', (req,res)=>{
-    res.status(200).render('contact.pug');
+    var myData = new contact(req.body);
+    myData.save().then(()=>{
+        res.send("Your details have been saved to the database.");
+    }).catch(()=>{
+        res.status(400).send("An error occured.")
+    });
 })
 
 //START SERVER
