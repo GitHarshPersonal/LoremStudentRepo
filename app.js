@@ -46,7 +46,7 @@ app.get('/productivity', (req,res)=>{
 app.post('/contact', (req,res)=>{
     var myData = new contact(req.body);
     myData.save().then(()=>{
-        res.send("Your details have been saved to the database.");
+        res.render('contactSaved.pug');
     }).catch(()=>{
         res.status(400).send("An error occured.")
     });
