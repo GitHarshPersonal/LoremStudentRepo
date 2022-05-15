@@ -33,3 +33,33 @@ block content
                 //-     button.delete
                 //-         <i class="fa-regular fa-trash-can"></i>
             script(src='../static/to-so.js')
+    .other-pro 
+        .notes 
+            h1 NOTES 
+            textarea#notes(placeholder="Temporary Data..." , style="resize:none;")
+        .calculator 
+            h1 Calulator
+            textarea#cal-display(name="cal-display", cols="30", rows="10", style="resize:none;")
+            .cal-buttons 
+                .row.one 
+                    button 7
+                    button 8
+                    button 9
+                    button X
+                .row.two 
+                    button 4
+                    button 5
+                    button 6
+                    button -
+                .row.three 
+                    button 1
+                    button 2
+                    button 3
+                    button +
+                .row.four 
+                    button =
+                    button 0
+                    button 
+                        | .
+                    button 
+                        | /
