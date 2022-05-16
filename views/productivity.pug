@@ -39,27 +39,31 @@ block content
             textarea#notes(placeholder="Temporary Data..." , style="resize:none;")
         .calculator 
             h1 Calulator
-            textarea#cal-display(name="cal-display", cols="30", rows="10", style="resize:none;")
+            input#result
             .cal-buttons 
                 .row.one 
-                    button 7
-                    button 8
-                    button 9
-                    button X
+                    button(onclick="dis('7')") 7
+                    button(onclick="dis('8')") 8
+                    button(onclick="dis('9')") 9
+                    button(onclick="dis('*')") X
                 .row.two 
-                    button 4
-                    button 5
-                    button 6
-                    button -
+                    button(onclick="dis('4')") 4
+                    button(onclick="dis('5')") 5
+                    button(onclick="dis('6')") 6
+                    button(onclick="dis('-')") -
                 .row.three 
-                    button 1
-                    button 2
-                    button 3
-                    button +
+                    button(onclick="dis('1')") 1
+                    button(onclick="dis('2')") 2
+                    button(onclick="dis('3')") 3
+                    button(onclick="dis('+')") +
                 .row.four 
-                    button =
-                    button 0
-                    button 
+                    button(onclick="solve()") 
+                        |=
+                    button(onclick="dis('0')") 0
+                    button(onclick="dis('.')") 
                         | .
-                    button 
+                    button(onclick="dis('/')") 
                         | /
+                .row.five 
+                    button#clear-btn(onclick="clr()") clear
+            script(src="../static/cal.js")

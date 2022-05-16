@@ -76,15 +76,17 @@
 .contact-form{
     text-align: center;
     margin-top: 30px;
-    background-color: antiquewhite;
+    background-color: rgb(163, 228, 163);
     padding: 40px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
     border-radius: 15px;
     height: 60vh;
 }
 .contact-form h1{
     font-size: 50px;
+    color: green;
 }
 
 .myForm{
@@ -178,9 +180,8 @@
     cursor: pointer;
     border-radius: 6px;
 }
-#buttons li button:hover{
-    position: relative;
-    top: -1px;
+#buttons li button:active{
+    background-color: rgb(251, 78, 78);
 }
 
 .timerHeading h1{
@@ -223,6 +224,7 @@
     background-color: #0dade3;
     border: 2px solid blue;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .tasks{
@@ -267,6 +269,7 @@
     flex-grow: 8;
     background-color: antiquewhite;
     margin: 40px;
+    margin-left: 85px;
     padding: 40px;
     border-radius: 10px;
     background-color: #FFFF99;
@@ -288,7 +291,8 @@
     flex-grow: 1;
     background-color: antiquewhite;
     margin: 40px;
-    padding: 40px;
+    margin-right: 80px;
+    padding: 40px 40px 60px 40px;
     border-radius: 10px;
     background-color: #4C0027;
 }
@@ -296,23 +300,24 @@
     color: white;
     font-size: 40px;
 }
-#cal-display{
-    height: 14%;
-    width: 100%;
+#result{
+    height: 12%;
+    width: 90%;
     border-radius: 4px;
     margin-bottom: 8px;
+    padding: 6px;
     background-color: #750550;
     color: white;
     text-align: right;
-    /* font-size: 24px; */
+    font-size: 16px;
+    outline: none;
 }
 .cal-buttons{
     margin-top: 10px;
 }
-
 .row button{
     margin: 2px;
-    width: 23.5%;
+    width: 22.5%;
     height: 15%;
     background-color: #570530;
     color: white;
@@ -320,4 +325,11 @@
     padding: 8px;
     font-size: 24px;
     cursor: pointer;
+}
+.row button:active{
+    background-color: #5f364b;
+}
+#clear-btn{
+    width: 95%;
+    height: 12%;
 }
